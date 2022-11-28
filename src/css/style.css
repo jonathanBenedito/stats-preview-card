@@ -104,7 +104,6 @@ body p {
     grid-area: image;
     background: url('../images/image-header-desktop.jpg') center center no-repeat;
     background-size: cover;
-    border-radius: 0 10px 10px 0;
     position: relative;
 }
 
@@ -116,6 +115,11 @@ body p {
     position: absolute;
     top: 0;
     left: 0;
+}
+
+.stats-card .right-image,
+.stats-card .right-image::after {
+    border-radius: 0 10px 10px 0;
 }
 
 @media (max-width: 1000px) {
@@ -142,9 +146,13 @@ body p {
     
     .stats-card .right-image {
         background: url('../images/image-header-mobile.jpg') center center no-repeat;
-        background-size: cover;
-        border-radius: 10px 10px 0 0;
+        background-size: cover;       
     }
+
+    .stats-card .right-image,
+    .stats-card .right-image::after {
+        border-radius: 10px 10px 0 0;
+}
 }
 
 /* - STATS-CARD */
